@@ -1,0 +1,197 @@
+.search-bar {
+    margin: 14px 0px 14px 0px;
+    /*TODO search bar is not responsive*/
+}
+.header {
+    z-index: 200;
+    height:57px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: white;
+    border:1px solid rgb(220, 220, 220);
+}
+.left-section {
+    display:flex;
+    margin-right:70px;
+    width:162px;
+    height:24px;
+    align-items: center;
+}
+.hamburger-menu {
+    width:26px;
+    height:26px;
+    margin:2px 20px 0px 24px;
+}
+.youtube-logo {
+    height:20px;
+    margin: 10px 0px 10px 7px; 
+    position: relative; 
+}
+.gb-logo {
+    position: absolute;
+    top:11px;
+    left:175px;
+    font-size:10px;
+}
+.middle-section {
+    display:flex;
+    flex: 1;
+    position: absolute;
+    top:-5px;
+    left:560px;
+    margin-left:60px;
+    width:670px;
+    align-items: center;
+}
+.search-bar {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size:16px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.search-bar::placeholder {
+    font-size: 16px;;
+}
+.search-button, .voice-search-button, 
+.upload-icon-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height:40px;
+    width:66px;
+    background-color: rgb(240, 240, 240);
+    border:1px solid rgb(192, 192, 192);
+    margin:0px 10px 0px -1px;
+}
+.search-button .tooltip, .voice-search-button .tooltip,
+.upload-icon-container .tooltip, 
+.notifications-icon-container .tooltip
+{
+    background-color: grey;
+    color: white;
+    padding:6px;
+    border-radius: 2px;    
+    position: absolute;
+    bottom:-45px;
+    opacity: 0;
+    transition: 1.15;
+    pointer-events:none;
+    white-space: nowrap;
+}
+
+.hamburger-menu:hover, .youtube-logo:hover,
+.gb-logo:hover,
+.search-button:hover, 
+.voice-search-button:hover, 
+.upload-icon-container:hover, 
+.notifications-icon-container:hover,
+.current-user-picture:hover,
+.tab-container:hover
+{
+    opacity: 1;
+    cursor: pointer;
+}
+.search-icon {
+    height:25px;
+    margin-top:4px;
+}
+.voice-search-button {
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    border: none;
+}
+.voice-search-icon {
+    height:24px;
+    margin-top:4px;
+    background-color:rgb(245, 245, 245);
+}
+.right-section {
+    position:absolute;
+    top:8px;
+    right:1px;
+    width:142px;
+    padding-top:3px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin: 0px 24px 0px 29px; 
+    flex-shrink: 0;
+}
+.upload-icon-container, 
+.notifications-icon-container {
+    position: relative;
+    width:26px;
+    background-color: white;
+    border:none;
+    font-size: 12px;
+}
+.upload-icon {
+    height:24px;
+    padding-bottom: 5px;
+}
+.notifications-icon {
+    height:23px;
+}
+.notifications-count {
+    position: absolute;
+    top:-1px;
+    right:-1px;
+    background-color: rgb(200,0,0);
+    color:white;
+    font-size: 11px;
+    padding: 1px 4px 1px 4px;
+    border-radius:10px;
+}
+.current-user-picture {
+    height:30px;
+    border-radius: 15px;
+    margin-left:4px;
+}
+.tablist {
+    display: flex;
+    height:50px;
+    width:1700px;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:109px;
+    padding-left: 20px;
+    background-color:rgba(255, 255, 255, 0.95);
+    z-index:100;
+    overflow-x:auto;
+}
+.tab-container {
+    display:flex;
+    align-items:center;
+    height:30px;
+    font-size: 13px;
+    background-color: rgb(215, 215, 215);
+    border-radius: 25px;
+    border:1px solid rgb(220, 220, 220);
+    padding:0px 10px 0px 10px;
+    box-shadow: inset;
+}
+.tab-container:active, .tab-container:visited {
+    color:white;
+    background-color: black;
+}
+.tab-container-start {
+    display:flex;
+    align-items:center;
+    height:30px;
+    font-size: 13px;
+    border-radius: 25px;
+    border:1px solid rgb(220, 220, 220);
+    padding:0px 8px 0px 8px;
+    color:white;
+    background-color: black;
+}

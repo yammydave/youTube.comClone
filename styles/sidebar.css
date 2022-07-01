@@ -1,0 +1,75 @@
+.sidebar {
+    font-size:14px;
+    position: fixed;
+    left:0;
+    bottom:0;
+    top: 55px;
+    background-color: white;
+    width:240px;
+    padding-top: 15px;
+    z-index:300;
+    overflow-y: auto;
+    height : 1000px; 
+    /*TODO Sidebar is not responsive*/
+}
+.sidebar-top {
+    border-bottom: 1px solid 214px rgb(220, 220, 220);
+    padding: 15px 0px 15px 0px;
+}
+.sidebar-middle {
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding-bottom: 20px;
+}
+.sidebar-bottom {
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding-bottom: 20px;
+}
+.sidebar-heading {
+    font-size:16px;
+    font: weight 500px;
+    padding:15px 0px 15px 25px;
+}
+.sidebar-link-home {
+    background-color: rgb(201, 198, 198);
+    font-weight:bold;    
+}
+.sidebar-link, .sidebar-link-home {
+    position: relative;
+    display: flex;
+    align-items:center;
+    width:214px;
+    height:32px;
+    cursor: pointer;
+    padding: 4px 10px 4px 16px;
+}
+.sidebar-link:hover {    
+    background-color: rgb(156, 153, 153);   
+    font-weight:500px;
+}
+.sidebar-link:active {
+    background-color: rgb(235, 235, 235);
+}
+.sidebar-link img, .sidebar-link-home img {
+    height:23px;
+    margin-left: 10px;
+    margin-right:20px;
+    padding:0px 0px 0px 0px;
+}
+.sidebar-channel-picture {
+    width: 23px;
+    padding-right: 6px;
+}
+.sidebar-profile-picture {
+    width:24px;
+    height:23px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.sidebar-channel-link {
+    font-size: 14px;
+    color: black;
+    position: absolute;
+    top:10px;
+    left: 74px;
+    text-decoration: none;  
+}
