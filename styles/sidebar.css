@@ -1,3 +1,4 @@
+
 .sidebar {
     font-size:14px;
     position: fixed;
@@ -9,7 +10,7 @@
     padding-top: 15px;
     z-index:300;
     overflow-y: auto;
-    height : 1000px; 
+    height : 90%; 
     /*TODO Sidebar is not responsive*/
 }
 .sidebar-top {

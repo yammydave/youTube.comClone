@@ -1,0 +1,1 @@
+Version 2 Removed some duplicated code, then made the site responsive by impliementing viewport meta tag, changing large dimensions into percentage values and sorted @media queries.

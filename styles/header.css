@@ -1,7 +1,4 @@
-.search-bar {
-    margin: 14px 0px 14px 0px;
-    /*TODO search bar is not responsive*/
-}
+
 .header {
     z-index: 200;
     height:57px;
@@ -40,25 +37,27 @@
 }
 .middle-section {
     display:flex;
-    flex: 1;
     position: absolute;
     top:-5px;
-    left:560px;
+    left:30%;
     margin-left:60px;
     width:670px;
     align-items: center;
 }
 .search-bar {
+    display: flex;
     flex: 1;
     height: 36px;
     padding-left: 10px;
     font-size:16px;
     border: 1px solid rgb(192, 192, 192);
+    margin: 14px 0px 14px 0px;
+    /*TODO search bar is not responsive*/
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
 }
 .search-bar::placeholder {
-    font-size: 16px;;
+    font-size: 16px;
 }
 .search-button, .voice-search-button, 
 .upload-icon-container {
