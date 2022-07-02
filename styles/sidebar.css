@@ -9,7 +9,6 @@
     background-color: white;
     width:240px;
     padding: 15px 0px 0px 0px;
-    z-index:300;
     overflow-y: auto;
     height : 90%; 
     /*TODO Sidebar is not responsive*/
@@ -17,13 +16,11 @@
 @media (max-width:899px) {
     .sidebar {
         width:120px;
-    }   
+    }      
 }
-
 .sidebar-top {
     position:absolute;
     top:55px;
-    border-bottom: 1px solid 214px rgb(211, 45, 45);
     padding: 15px 0px 15px 0px;
 }
 .sidebar-middle {
@@ -56,6 +53,15 @@
     cursor: pointer;
     padding: 4px 10px 4px 16px;
 }
+.main-icons {
+    position: absolute;
+    left:74px;
+}
+@media (max-width:899px) {
+    .main-icons {
+        left: 50px;
+    }      
+}
 .sidebar-link:hover {    
     background-color: rgb(156, 153, 153);   
     font-weight:500px;
@@ -67,7 +73,6 @@
     height:23px;
     margin-left: 10px;
     margin-right:20px;
-    padding:0px 0px 0px 0px;
 }
 .sidebar-channel-picture {
     width: 23px;
@@ -83,7 +88,13 @@
     font-size: 14px;
     color: black;
     position: absolute;
-    top:10px;
-    left: 74px;
+    top:6px;
+    left: 70px;
     text-decoration: none;  
+}
+@media (max-width:899px) {
+    .sidebar-channel-link, .sidebar-channel-link-home {
+        top:4px;
+        left:50px;
+    }
 }
