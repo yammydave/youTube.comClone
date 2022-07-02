@@ -164,8 +164,8 @@
     width:1700px;
     align-items:center;
     justify-content:space-between;
-    margin:106px 0px 0px 220px;
-    padding-left: 20px;
+    margin:106px 0px 0px 0px;
+    padding-left: 250px;
     background-color:rgba(255, 255, 255, 0.95);
     z-index:200;
     overflow-x:auto;
