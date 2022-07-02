@@ -1,7 +1,7 @@
 
 .header {
     z-index: 200;
-    height:57px;
+    height:67px;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height:40px;
+    height:36px;
     width:66px;
     background-color: rgb(240, 240, 240);
     border:1px solid rgb(192, 192, 192);
@@ -116,7 +116,7 @@
 }
 .right-section {
     position:absolute;
-    top:8px;
+    top:6px;
     right:1px;
     width:142px;
     padding-top:3px;
@@ -158,39 +158,33 @@
 }
 .tablist {
     display: flex;
-    height:50px;
+    height:80px;
     width:1700px;
     align-items:center;
     justify-content:space-between;
-    margin-top:109px;
+    margin-top:106px;
     padding-left: 20px;
     background-color:rgba(255, 255, 255, 0.95);
     z-index:100;
     overflow-x:auto;
 }
-.tab-container {
-    display:flex;
-    align-items:center;
-    height:30px;
-    font-size: 13px;
+.tab-container {    
     background-color: rgb(215, 215, 215);
-    border-radius: 25px;
     border:1px solid rgb(220, 220, 220);
     padding:0px 10px 0px 10px;
-    box-shadow: inset;
 }
-.tab-container:active, .tab-container:visited {
+.tab-container, .tab-container-start {
+    display:flex;
+    align-items:center;
+    height:50px;
+    font-size: 13px;
+    border-radius: 25px;
+}
+
+.tab-container:active, .tab-container:visited, .tab-container-start {
     color:white;
     background-color: black;
 }
 .tab-container-start {
-    display:flex;
-    align-items:center;
-    height:30px;
-    font-size: 13px;
-    border-radius: 25px;
-    border:1px solid rgb(220, 220, 220);
     padding:0px 8px 0px 8px;
-    color:white;
-    background-color: black;
 }

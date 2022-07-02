@@ -10,14 +10,11 @@
     margin-left:350px;
     margin-top:40px;
 }
-
-
-
-/*TODO Grid is not responsive with these settings*/
-@media (min-width:500px) and (max-width:890px) {
+@media (max-width:899px) {
     .video-grid {
         grid-template-columns: 1fr;
-    }
+        margin-left:120px;
+    }   
 }
 @media (min-width:900px) and (max-width:1370px) {
     .video-grid {
