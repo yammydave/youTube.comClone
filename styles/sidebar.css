@@ -13,7 +13,7 @@
     height : 90%; 
     /*TODO Sidebar is not responsive*/
 }
-@media (max-width:899px) {
+@media (max-width:699px) {
     .sidebar {
         width:120px;
     }      
@@ -40,7 +40,7 @@
     font: weight 500px;
     padding:15px 0px 15px 25px;
 }
-@media (max-width:899px) {
+@media (max-width:699px) {
     .sidebar-heading {
         padding-left:4px;
     }
@@ -58,7 +58,7 @@
     cursor: pointer;
     padding: 4px 10px 4px 16px;
 }
-@media (max-width:899px) {
+@media (max-width:699px) {
     .sidebar-link, .sidebar-link-home {
         padding:4px 2px 4px 1px;
     }
@@ -67,11 +67,10 @@
     position: absolute;
     left:74px;
 }
-@media (max-width:899px) {
+@media (max-width:699px) {
     .icon-name {
-        left: 15px;
-        
-    font-size:9px;
+        left: 15px;        
+        font-size:9px;
     }      
 }
 .sidebar-link:hover {    
@@ -86,7 +85,7 @@
     margin-left: 10px;
     margin-right:20px;
 }
-@media (max-width:899px) {
+@media (max-width:699px) {
     .sidebar-link img, .sidebar-link-home img {
         margin-left:1px;
         margin-right:1px;
@@ -110,7 +109,7 @@
     left: 70px;
     text-decoration: none;  
 }
-@media (max-width:899px) {
+@media (max-width:699px) {
     .sidebar-channel-link, .sidebar-channel-link-home {
         top:4px;
         left:30px;

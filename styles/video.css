@@ -10,13 +10,13 @@
     margin-left:350px;
     margin-top:40px;
 }
-@media (max-width:899px) {
+@media (max-width:699px) {
     .video-grid {
         grid-template-columns: 1fr;
         margin-left:115px;
     }   
 }
-@media (min-width:900px) and (max-width:1370px) {
+@media (min-width:699px) and (max-width:1370px) {
     .video-grid {
         grid-template-columns: 1fr 1fr;
     }
