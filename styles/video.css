@@ -105,6 +105,18 @@
     color:black;
     text-decoration: none;
 }
+.disclaimer-note {
+    font-size: 28px;
+    color:red;
+    text-decoration: underline;
+    margin-left:300px;
+}
+@media (max-width:699px) {
+    .disclaimer-note{        
+    font-size:18px;
+    margin-left: 150px;
+    }
+}
 
 
 
