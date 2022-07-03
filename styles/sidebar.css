@@ -70,6 +70,8 @@
 @media (max-width:899px) {
     .icon-name {
         left: 15px;
+        
+    font-size:9px;
     }      
 }
 .sidebar-link:hover {    
@@ -87,6 +89,7 @@
 @media (max-width:899px) {
     .sidebar-link img, .sidebar-link-home img {
         margin-left:1px;
+        margin-right:1px;
     }
 }
 .sidebar-channel-picture {
@@ -111,5 +114,6 @@
     .sidebar-channel-link, .sidebar-channel-link-home {
         top:4px;
         left:30px;
+        font-size: 9px;
     }
 }
