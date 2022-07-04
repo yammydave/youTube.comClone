@@ -162,7 +162,7 @@
     position: absolute;
     width:1920px;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-evenly;
     margin:106px 0px 0px 0px;
     padding-left: 250px;
     background-color:rgba(255, 255, 255, 0.95);
@@ -185,7 +185,7 @@
 .tab-container, .tab-container-start {
     display:flex;
     align-items:center;
-    height:50px;
+    height:30px;
     font-size: 13px;
     border-radius: 25px;
 }
