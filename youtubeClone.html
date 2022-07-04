@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=yes">
+        <title>YouTube.com Clone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+    </head>
+    <body>      
+        <header class="header">           
+
+          <!--No links to feeds in the header, as this is only a clone, so not signed into YouTube-->   
+            <nav class="left-section">
+                <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+                <img class="youtube-logo" src="icons/youtube-logo.svg">
+                <div class="gb-logo">GB</div>
+            </nav>
+            <nav class="middle-section"><input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button">                    
+                        <img class="search-icon" src="icons/search.svg">                             
+                </button>
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+                </button>
+            </nav>
+        
+            <nav class="right-section">
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="icons/upload.svg">
+                </div>    
+                <div class="notifications-icon-container">
+                    <img class="notifications-icon" src="icons/notifications.svg">
+                    <div class="notifications-count">3</div>
+                </div>
+        <!--I have included the link to my channel-->
+                <div class="current-user-container">
+                    <a href="https://www.youtube.com/channel/UCnlI7DlL4WjQmstV6Xi6SAg">                                            
+                        <img class="current-user-picture" src="channel-pictures//my-channel.jpg">
+                    </a> 
+                </div>                      
+            </nav>
+        <!--No links to feeds in the tablist (located under the header), as this is only a clone, so not signed into YouTube--> 
+            <nav class="tablist">
+                <div class="tab-container-start">All</div>                   
+                <div class="tab-container">New to you</div>              
+                <div class="tab-container">Cooking shows</div>                
+                <div class="tab-container">Motorcycles</div>
+                <div class="tab-container">Foraging</div>               
+                <div class="tab-container">Politics</div> 
+                <div class="tab-container">History</div>
+                <div class="tab-container">Gardening</div>      
+                <div class="tab-container">Tools</div>  
+                <div class="tab-container">Wine/mead making</div>                
+                <div class="tab-container">Antarctic beekeeping</div>                
+                <div class="tab-container">Nocturnal solar panels</div>                     
+                <div class="tab-container">Kitten Juggling</div>                
+                <div class="tab-container">Underwater canoeing</div>        
+            </nav>
+        </header>   
+        <div class="page-wrap">
+            <!--No links to feeds in the sidebar, as this is only a clone, so not signed into YouTube-->
+           <nav class="sidebar">
+               <nav class="sidebar-top">
+                       <div class="sidebar-link-home">
+                           <img src="icons/home.svg">
+                           <div class="icon-name">Home</div>                     
+                       </div>                 
+                   
+                   <div class="sidebar-link">
+                       <img src="icons/explore.svg">
+                       <div class="icon-name">Explore</div>
+                   </div>
+                   <div class="sidebar-link">
+                       <img src="icons/shorts.jpg">
+                       <div class="icon-name">Shorts</div>
+                   </div>
+                   <div class="sidebar-link">
+                       <img src="icons/subscriptions.svg">
+                       <div class="icon-name">Subscriptions</div>
+                   </div>           
+               </nav>
+               <nav class="sidebar-middle">
+                   <div class="sidebar-link">
+                       <img src="icons/library.svg">
+                       <div class="icon-name">Library</div>
+                   </div> 
+                   <div class="sidebar-link">
+                       <img src="icons/history.jpg">
+                       <div class="icon-name">History</div>
+                   </div>
+                   <div class="sidebar-link">
+                       <img src="icons/your-videos.jpg">
+                       <div class="icon-name">Your videos</div>
+                   </div>
+                   <div class="sidebar-link">
+                       <img src="icons/watch-later.png">
+                       <div class="icon-name">Watch Later</div>
+                   </div>
+                   <div class="sidebar-link">
+                       <img src="icons/favourities.jpg">
+                       <div class="icon-name">Favourites</div>
+                   </div>
+                   <div class="sidebar-link">
+                       <img src="icons/originals.svg">
+                       <div class="icon-name">Originals</div>
+                       </div>
+                   <div class="sidebar-link">
+                       <img src="icons/youtube-music.svg">
+                       <div class="icon-name">YouTube Music</div>
+                   </div>
+               </nav>
+
+               <nav class="sidebar-bottom">
+                   <div class="sidebar-heading-subscriptions">SUBSCRIPTIONS</div>
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/AbsoluteHistoryChannel">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/Absolute History.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/AbsoluteHistoryChannel">
+                           Absolute History
+                       </a>
+                   </div>     
+                   <div class="sidebar-link">
+                           <a href="https://www.youtube.com/c/aljazeeraenglish">
+                               <div class="sidebar-channel-picture">
+                                   <img class="sidebar-profile-picture" src="channel-pictures/Al Jazeera English">
+                               </div>                                
+                           </a>
+                           <a class="sidebar-channel-link" href="https://www.youtube.com/c/aljazeeraenglish">
+                               Al Jazeera English
+                           </a>
+                   </div>
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/BestEverFoodReviewShow">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/Best Ever Food Review.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/BestEverFoodReviewShow">
+                           Best Ever Food Revie...
+                       </a>
+                   </div>  
+                                   
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/colinfurze">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/colinfurze.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/colinfurze">
+                           colinfurze
+                       </a>
+                   </div>  
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/c90adventures">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/c90adventures.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/c90adventures">
+                           c90adventures
+                       </a>
+                   </div>  
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/CafeRacerGarage">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/Cafe Racer Garage.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/CafeRacerGarage">
+                           Cafe Racer Garage
+                       </a>
+                   </div>       
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/ItchyBoots">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/Itchy Boots.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/ItchyBoots">
+                           Itchy Boots
+                       </a>
+                   </div>    
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/MotoRestoLLC">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/Moto-Resto,LLC.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/MotoRestoLLC">
+                           Moto-Resto,LLC
+                       </a>
+                   </div>  
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/SuperSimpleDev">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/SuperSimpleDev.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/SuperSimpleDev">
+                           SuperSimpleDev
+                       </a>
+                   </div>  
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/TheClassicMotorcycleChannel">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/The Classic Motorcycle Channel.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/TheClassicMotorcycleChannel">
+                           The Classic Motorcyle Channel
+                       </a>
+                   </div>  
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/theindieprojects">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/The Indie Projects.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/theindieprojects">
+                           The Indie Projects
+                       </a>
+                   </div> 
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/user/jastownsendandson">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/Townsends.jpg">
+                           </div>                                
+                       </a>
+                       <a class=sidebar-channel-link href="https://www.youtube.com/user/jastownsendandson">
+                           Townsends
+                       </a>
+                   </div>
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/AllenMillyard">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/alanMillyard.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/AllenMillyard">
+                           Allen Millyard
+                       </a>
+                   </div> 
+                   <div class="sidebar-link">
+                           <a href="https://www.youtube.com/c/CitySteadingyt">
+                               <div class="sidebar-channel-picture">
+                                   <img class="sidebar-profile-picture" src="channel-pictures/CitySteading.webp">
+                               </div>                                
+                           </a>
+                           <a class="sidebar-channel-link" href="https://www.youtube.com/c/CitySteadingyt">
+                               City Steading Brews
+                           </a>
+                   </div>  
+                   <div class="sidebar-link">
+                       <a href="https://www.youtube.com/c/TastingHistory">
+                           <div class="sidebar-channel-picture">
+                               <img class="sidebar-profile-picture" src="channel-pictures/tasting-history.jpg">
+                           </div>                                
+                       </a>
+                       <a class="sidebar-channel-link" href="https://www.youtube.com/c/TastingHistory">
+                           Tasting History with..
+                       </a>
+               </div>      
+               </nav>                    
+           </nav>
+       </div>
+       
+       </nav>
+        <main>
+            <!--All the actual videos are in this section and channel avatars include working links to both their channels and videos-->
+            <section class="video-grid">              
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-runtime">9:13</div> 
+                        <a class="video-link" href="https://www.youtube.com/watch?v=Q1kHG842HoI&t=26s&ab_channel=SuperSimpleDev">
+                            <img class="thumbnail" src="thumbnails/branching-and-merging.webp">
+                        </a>                        
+                    </div>
+                        <div class="video-info-grid">
+                            <a href="https://www.youtube.com/c/SuperSimpleDev">
+                                <div class="channel-picture">
+                                    <img class="profile-picture" src="channel-pictures/SuperSimpleDev.jpg">
+                                </div>  
+                            </a>
+                                    
+                            <div class="video-info">       
+                                <a class="video-link" href="https://www.youtube.com/watch?v=Q1kHG842HoI&t=26s&ab_channel=SuperSimpleDev">
+                                    <div class="video-title">
+                                    Git Branching and Merging - Detailed Tutorial
+                                    </div>
+                                </a>
+                                <a class="channel-link" href="https://www.youtube.com/c/SuperSimpleDev">
+                                    <div class="video-author">
+                                        SuperSimpleDev
+                                    </div>
+                                </a>                            
+                                <div class="video-stats">
+                                    18k views &#183; 1 year ago.
+                                </div>
+                            </div> 
+                    </div>
+                </div>  
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-runtime">28:23</div>
+                        <a class="video-link" href="https://www.youtube.com/watch?v=vXgYp9GeKS0&ab_channel=K%C9%99ndH%C9%99yat%C4%B1">
+                            <img class="thumbnail" src="thumbnails/azerbajan-cooking.webp">
+                        </a>                    
+                    </div>
+                    <div class="video-info-grid">
+                        <a href="https://www.youtube.com/channel/UCIix6MklfJFywa_36iDj8Sw">
+                            <div class="channel-picture">
+                                <img class="profile-picture" src="channel-pictures/azerbajan.jpg">
+                            </div>
+                        </a>
+                        
+                        <div class="video-info">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=vXgYp9GeKS0&ab_channel=K%C9%99ndH%C9%99yat%C4%B1">
+                                <div class="video-title">
+                                    Cooking Carp fish on a Campfire in Sadj with Vegetables
+                                </div>
+                            </a>                       
+                            <a class="channel-link" href="https://www.youtube.com/channel/UCIix6MklfJFywa_36iDj8Sw">
+                                <div class="video-author">
+                                    Country Life Vlog
+                                </div>
+                            </a>
+                            
+                            <div class="video-stats">
+                                3,092,395 views &#183; 8th Nov 2020.
+                            </div>                  
+                        </div>  
+                    </div>      
+                </div> 
+                        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-runtime">16:29</div>
+                        <a class="video-link" href="https://www.youtube.com/watch?v=NBELKvAWHsU&ab_channel=BestEverFoodReviewShow">
+                            <img class="thumbnail" src="thumbnails/lobster.webp">
+                        </a>                    
+                    </div>
+                    <div class="video-info-grid">
+                        <a href="https://www.youtube.com/c/BestEverFoodReviewShow">
+                            <div class="channel-picture">
+                                <img class="profile-picture" src="channel-pictures/Best Ever Food Review.jpg">
+                            </div>
+                        </a>
+                        
+                        <div class="video-info">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=NBELKvAWHsU&ab_channel=BestEverFoodReviewShow">
+                                <div class="video-title">
+                                    French Chef Prepares RARE Red Spiny LOBSTER 5 Ways!!
+                                </div>
+                            </a>                       
+                            <a class="channel-link" href="https://www.youtube.com/c/BestEverFoodReviewShow">
+                                <div class="video-author">
+                                    Best Ever Food Review Show
+                                </div>
+                            </a>                            
+                            <div class="video-stats">
+                                4,106,589  views &#183; 7th Apr 2021.
+                            </div>                  
+                        </div>  
+                    </div>      
+                </div> 
+                
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-runtime">5:31:29</div>
+                        <a class="video-link" href="https://www.youtube.com/watch?v=t8pPdKYpowI&t=40s&ab_channel=TechWorldwithNana">                        
+                        <img class="thumbnail" src="thumbnails/python.webp">
+                        </a>
+                    </div>
+                        <div class="video-info-grid">
+                            <a href="https://www.youtube.com/c/TechWorldwithNana">
+                                <div class="channel-picture">
+                                    <img class="profile-picture" src="channel-pictures/techworld.jpg">
+                                </div> 
+                            </a>
+                        
+                        <div class="video-info"> 
+                            <a class="video-link" href="https://www.youtube.com/watch?v=1ibmWyt8hfw&ab_channel=SuperSimpleDev">
+                                <div class="video-title">                            
+                                    Python Tutorial for Beginners - Learn Python in 5 Hours [FULL COURSE]
+                                </div> 
+                            </a>                      
+                            <a class="channel-link" href="https://www.youtube.com/c/TechWorldwithNana">
+                                <div class="video-author">
+                                    TechWorld with Nana
+                                </div>
+                            </a>                        
+                            <div class="video-stats">
+                                2,777,870 views &#183; 5 Mar 2021
+                            </div>                  
+                        </div>  
+                    </div> 
+                </div>    
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-runtime">10:13</div>
+                        <a class="video-link" href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                            <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+                        </a>                   
+                    </div>
+                    <div class="video-info-grid">
+                        <a href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww">
+                            <div class="channel-picture">
+                                <img class="profile-picture" src="channel-pictures/channel-7.jpeg">
+                            </div> 
+                        </a>
+                        
+                        <div class="video-info">    
+                            <a class="video-link" href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                                <div class="video-title">                           
+                                    Why Planes Don't Fly Over Tibet
+                                </div>
+                            </a>     
+                            <a class="channel-link" href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww">
+                                <div class="video-author">
+                                    RealLifeLore
+                                </div>
+                            </a>           
+                            
+                            <div class="video-stats">
+                                7,769,714 views &#183; 15th Sept 2020.
+                            </div>                  
+                        </div>  
+                    </div>      
+                </div> 
+   
+                
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                    <div class="video-runtime">19:24</div>
+                        <a class="video-link" href="https://www.youtube.com/watch?v=mJ-qvsxPHpY&ab_channel=NickWhite">                    
+                    <img class="thumbnail" src="thumbnails/git-for-dummies.webp">
+                    </a>
+                </div>    
+                <div class="video-info-grid">
+                    <a href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/nick-white.jpg">
+                        </div> 
+                    </a>
+                        
+                        <div class="video-info">   
+                            <a class="video-link" href="https://www.youtube.com/watch?v=mJ-qvsxPHpY&ab_channel=NickWhite">
+                                <div class="video-title">
+                                    Git Tutorial For Dummies
+                                </div>
+                            </a>  
+                            <a class="channel-link" href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg">
+                                <div class="video-author">
+                                    Nick White
+
+                                </div>
+                            </a>                 
+                            
+                            <div class="video-stats">
+                                66,232 views &#183; 4 Apr 2021
+                            </div>                  
+                        </div>  
+                    </div>      
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                    <div class="video-runtime">8:16</div>
+                        <a class="video-link" href="https://www.youtube.com/watch?v=tvMm4Uh3HPs&ab_channel=RealLifeLore">                    
+                    <img class="thumbnail" src="thumbnails/soviet-plan.webp">
+                    </a>
+                </div>    
+                <div class="video-info-grid">
+                    <a href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/reallifelore.jpg">
+                        </div> 
+                    </a>
+                        
+                        <div class="video-info">   
+                            <a class="video-link" href="https://www.youtube.com/watch?v=tvMm4Uh3HPs&ab_channel=RealLifeLore">
+                                <div class="video-title">
+                                    The Secret Soviet Plan to Crush NATO in 7 Days
+                                </div>
+                            </a>  
+                            <a class="channel-link" href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg">
+                                <div class="video-author">
+                                    RealLifeLore
+                                </div>
+                            </a>               
+                            <div class="video-stats">
+                                7,431,841 views &#183; 15 Jan 2019
+                            </div>                  
+                        </div>  
+                    </div>      
+                </div>
+                
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div class="video-runtime">56:02</div>
+                        <a class="video-link" href="https://www.youtube.com/watch?v=1ibmWyt8hfw&ab_channel=SuperSimpleDev">                        
+                        <img class="thumbnail" src="thumbnails/git-and github.webp">
+                        </a>
+                    </div>
+                        <div class="video-info-grid">
+                            <a href="https://www.youtube.com/c/SuperSimpleDev">
+                                <div class="channel-picture">
+                                    <img class="profile-picture" src="channel-pictures/SuperSimpleDev.jpg">
+                                </div> 
+                            </a>
+                        
+                        <div class="video-info"> 
+                            <a class="video-link" href="https://www.youtube.com/watch?v=1ibmWyt8hfw&ab_channel=SuperSimpleDev">
+                                <div class="video-title">                            
+                                    Git and GitHub - 0 Experience to Professional in 1 Tutorial (Part 2)
+                                </div> 
+                            </a>                      
+                            <a class="channel-link" href="https://www.youtube.com/c/SuperSimpleDev">
+                                <div class="video-author">
+                                    SuperSimpleDev
+                                </div>
+                            </a>                        
+                            <div class="video-stats">
+                                7,164 views &#183; 12th Mar 2021.
+                            </div>                  
+                        </div>  
+                    </div>                     
+                </div>
+           
+                <div class="video-preview">                    
+                    <div class="thumbnail-row">
+                        <a class="video-link" href="https://www.youtube.com/watch?v=tbRcSOsr894&ab_channel=InconvenientTruthsbyJenniferZeng">
+                            <img class="thumbnail" src="thumbnails/organ-harvest.webp">
+                        </a>    
+                    <div class="video-runtime">14:20</div>
+                </div>    
+                        
+                <div class="video-info-grid">
+                        <a href="https://www.youtube.com/c/InconvenientTruthsbyJenniferZeng">
+                            <div class="channel-picture">
+                                <img class="profile-picture" src="channel-pictures/inconvenient-truths.jpg">
+                            </div>
+                        </a>
+                                    
+                            <div class="video-info"> 
+                                <a class="video-link" href="https://www.youtube.com/watch?v=tbRcSOsr894&ab_channel=InconvenientTruthsbyJenniferZeng">
+                                    <div class="video-title">
+                                        China&apos;s Hideous Science of Forced Organ Harvesting: Civil Society Delegation Statements
+                                    </div>
+                                </a>                      
+                        <a class="channel-link" href="https://www.youtube.com/c/InconvenientTruthsbyJenniferZeng">
+                            <div class="video-author">
+                                Inconvenient Truths by Jennifer Zeng
+                            </div>
+                        </a>                             
+                                <div class="video-stats">
+                                    56 views &#183; 28th Jun 2022.
+                                </div>
+                            </div> 
+                    </div>
+                </div>  
+
+                <div class="video-preview">                    
+                    <div class="thumbnail-row">
+                        <a class="video-link" href="https://www.youtube.com/watch?v=VZTX32_dcjM&ab_channel=RideableClassics">
+                            <img class="thumbnail" src="thumbnails/rideable-classics.webp">
+                        </a>    
+                        <div class="video-runtime">19:54</div>
+                </div>  
+                    <div class="video-info-grid">
+                        <a href="https://www.youtube.com/c/RideableClassics">
+                            <div class="channel-picture">
+                                <img class="profile-picture" src="channel-pictures/rideable-classics.jpg">
+                            </div>
+                        </a>                                    
+                            <div class="video-info"> 
+                                <a class="video-link" href="https://www.youtube.com/watch?v=VZTX32_dcjM&ab_channel=RideableClassics">
+                                    <div class="video-title">
+                                        GPz600r - Unexpected maintenance day....
+                                    </div>
+                                </a>                      
+                        <a class="channel-link" href="https://www.youtube.com/c/RideableClassics">
+                            <div class="video-author">
+                                Rideable Classics
+                            </div>
+                        </a>                             
+                                <div class="video-stats">
+                                    326 views &#183; 28th Jun 2022.
+                                </div>
+                            </div> 
+                    </div>
+                </div>  
+                
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a class="video-link" href="https://www.youtube.com/watch?v=yY4LJfy3Bkc&ab_channel=Channel4News">                    
+                            <img class="thumbnail" src="thumbnails/scotlan-independence.webp">
+                        </a>
+                        <div class="video-runtime">9:08</div>
+                </div>    
+                    <div class="video-info-grid">
+                        <a href="https://www.youtube.com/c/Channel4News">
+                            <div class="channel-picture">
+                                <img class="profile-picture" src="channel-pictures/channel-4-news.jpg">
+                            </div> 
+                        </a>                            
+                            <div class="video-info">   
+                                <a class="video-link" href="https://www.youtube.com/watch?v=yY4LJfy3Bkc&ab_channel=Channel4News">
+                                    <div class="video-title">
+                                        Is Scotland heading for UK exit after new independence vote plan?
+                                    </div>
+                                </a>  
+                        <a class="channel-link" href="https://www.youtube.com/c/Channel4News">
+                                    <div class="video-author">
+                                        Channel 4 News
+                                    </div>
+                        </a>              
+                                <div class="video-stats">
+                                    16,178 views &#183; 28th Jun 2022
+                                </div>                  
+                            </div>  
+                    </div>      
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a class="video-link" href="https://www.youtube.com/watch?v=zN1bzdxZdbg&ab_channel=TastingHistorywithMaxMiller">                        
+                            <img class="thumbnail" src="thumbnails/tasting-history-absinthe.webp">
+                        </a>
+                        <div class="video-runtime">17:58</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <a href="https://www.youtube.com/c/TastingHistory">
+                            <div class="channel-picture">
+                                <img class="profile-picture" src="channel-pictures/tasting-history.jpg">
+                            </div> 
+                        </a>                        
+                        <div class="video-info">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=zN1bzdxZdbg&ab_channel=TastingHistorywithMaxMiller">
+                                <div class="video-title">
+                                    The Absinthe Murder
+                                </div>
+                            </a>    
+                            <a class="channel-link" href="https://www.youtube.com/c/TastingHistory">
+                                <div class="video-author">
+                                    Tasting History with Max Miller
+                                </div>
+                            </a>               
+                            
+                            <div class="video-stats">
+                                7,550 views &#183; 28th Jun 2022.
+                            </div>                  
+                        </div>  
+                    </div>      
+                </div> 
+            </section>                  
+            <div class="disclaimer-note">THIS WEBSITE IS MEANT SOLELY AS A VISUAL CLONE OF YOUTUBE.COM FOR THE PURPOSE OF DEMONSTRATING MY SKILL LEVEL FOR OBTAINING WORK AS A WEB DEVELOPER.</div>                 
+        </main>
+        
+    </body>
+</html>

@@ -35,14 +35,15 @@
     border-bottom: 1px solid rgb(220, 220, 220);
     padding-bottom: 20px;
 }
-.sidebar-heading {
+.sidebar-heading-subscriptions {
     font-size:16px;
     font: weight 500px;
     padding:15px 0px 15px 25px;
 }
 @media (max-width:699px) {
-    .sidebar-heading {
-        padding-left:4px;
+    .sidebar-heading-subscriptions {
+        padding-left:0px;
+        font-size:12px;
     }
 }
 .sidebar-link-home {

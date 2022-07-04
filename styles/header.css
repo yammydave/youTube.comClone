@@ -158,30 +158,28 @@
     padding-top:2px;
 }
 .tablist {
-    display: flex;
+    display:flex;
     position: absolute;
-    height:80px;
-    width:1900px;
+    width:1920px;
     align-items:center;
     justify-content:space-between;
     margin:106px 0px 0px 0px;
     padding-left: 250px;
     background-color:rgba(255, 255, 255, 0.95);
     z-index:200;
-    overflow-x:auto;
 }
-@media (max-width:699px) {
+@media (max-width:1370px) {
     .tablist {
         margin-left:0px;  
         padding-left:0px;
         justify-content: left;
-        overflow-x:scroll;
         height:40px;
+        white-space:nowrap;
+        overflow-x:scroll;
     }
 }
 .tab-container {    
     background-color: rgb(215, 215, 215);
-    border:1px solid rgb(220, 220, 220);
     padding:0px 10px 0px 10px;
 }
 .tab-container, .tab-container-start {
@@ -196,6 +194,7 @@
         font-size:9px;
         padding:0px 2px 0px 2px;
         height:30px;
+        border-radius: 40px;
     }
 }
 .tab-container:active, .tab-container:visited, .tab-container-start {
