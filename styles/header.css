@@ -175,7 +175,7 @@
         margin-left:0px;  
         padding-left:0px;
         justify-content: left;
-        overflow-x:auto;
+        overflow-x:scroll;
         height:40px;
     }
 }
