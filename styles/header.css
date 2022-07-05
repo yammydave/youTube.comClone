@@ -1,7 +1,7 @@
 
 .header {
     z-index: 200;
-    height:67px;
+    height:66px;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -201,16 +201,17 @@
     padding-top:2px;
 }
 .tablist {
-    display:flex;
+    display:grid;
+    width: 1900px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     position: absolute;
-    width:1920px;
-    height:60px;
+    height:fit-content;
     align-items:center;
-    justify-content:space-evenly;
+    justify-content:center;
     margin:106px 0px 0px 0px;
     padding-left: 250px;
     background-color:rgba(255, 255, 255, 0.95);
-    z-index:200;
+    border:1px solid rgb(220, 220, 220);
 }
 @media (max-width:1370px) {
     .tablist {
@@ -218,7 +219,6 @@
         padding-left:0px;
         justify-content: left;
         height:40px;
-        white-space:nowrap;
         overflow-x:scroll;
     }
 }
@@ -228,7 +228,9 @@
 }
 .tab-container, .tab-container-start {
     display:flex;
+    width:fit-content;
     align-items:center;
+    max-width: max-content;
     height:30px;
     font-size: 13px;
     border-radius: 25px;
