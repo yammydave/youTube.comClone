@@ -203,7 +203,7 @@
 .tablist {
     display:grid;
     width: 1900px;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     position: absolute;
     height:fit-content;
     align-items:center;
@@ -219,12 +219,27 @@
         padding-left:0px;
         justify-content: left;
         height:40px;
-        overflow-x:scroll;
+        overflow-x:auto;
+    }
+}
+@media (max-width:699px) {
+    .tablist {
+        grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+        margin-left:0px;  
+        padding-left:0px;
+        justify-content: left;
+        height:40px;
+        overflow-x:auto;
     }
 }
 .tab-container {    
     background-color: rgb(215, 215, 215);
     padding:0px 10px 0px 10px;
+}
+@media (max-width:699px) {
+    .tab-container, .tab-container-start {
+        padding:0px 5px 0px 5px;
+    }
 }
 .tab-container, .tab-container-start {
     display:flex;
@@ -238,9 +253,8 @@
 @media (max-width:699px) {
     .tab-container, .tab-container-start {
         font-size:9px;
-        padding:0px 2px 0px 2px;
-        height:30px;
-        border-radius: 40px;
+        padding:0px 5px 0px 5px;
+        border-radius: 30px;
     }
 }
 .tab-container:active, .tab-container:visited, .tab-container-start {
