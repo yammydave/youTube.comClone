@@ -37,7 +37,7 @@
 }
 .sidebar-heading-subscriptions {
     font-size:16px;
-    font: weight 500px;
+    font-weight: 500;
     padding:15px 0px 15px 25px;
 }
 @media (max-width:699px) {
@@ -76,7 +76,7 @@
 }
 .sidebar-link:hover {    
     background-color: rgb(156, 153, 153);   
-    font-weight:500px;
+    font-weight:500;
 }
 .sidebar-link:active {
     background-color: rgb(235, 235, 235);

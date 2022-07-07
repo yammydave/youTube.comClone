@@ -120,7 +120,7 @@
     position: absolute;
     bottom:-45px;
     opacity: 0;
-    transition: 1.15;
+    transition: 1.15s;
     pointer-events:none;
     white-space: nowrap;
 }
