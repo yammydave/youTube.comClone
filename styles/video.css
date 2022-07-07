@@ -117,6 +117,16 @@
     margin-left: 150px;
     }
 }
+.w3c-validation {
+    display:flex;
+    margin-left:300px;
+    justify-content: space-between;
+}
+@media (max-width:699px) {
+    .w3c-validation {
+        margin-left: 150px;
+    }
+}
 
 
 

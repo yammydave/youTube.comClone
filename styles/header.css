@@ -109,6 +109,7 @@
         left:160px;
     }
 }
+/*
 .search-button .tooltip, .voice-search-button .tooltip,
 .upload-icon-container .tooltip, 
 .notifications-icon-container .tooltip
@@ -124,7 +125,7 @@
     pointer-events:none;
     white-space: nowrap;
 }
-
+*/
 .hamburger-menu:hover, .youtube-logo:hover,
 .gb-logo:hover,
 .search-button:hover, 
